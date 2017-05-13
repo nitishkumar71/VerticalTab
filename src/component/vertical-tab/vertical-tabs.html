@@ -1,0 +1,17 @@
+<!--<div>
+    <p *ngFor="let template of templates">{{template.name}}</p>
+</div>-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 vertical-tab-container">
+            <div class="col-md-2 vertical-tab-menu">
+                <ul class="list-vertical-group">
+                    <li *ngFor="let tab of tabs" class="list-group-item text-center" (click)="selectTab(tab)" [class.active]="tab.active">{{tab.title}}</li>
+                </ul>
+            </div>
+            <div class="col-md-9 vertical-tab">
+                <ng-content></ng-content>
+            </div>
+        </div>
+    </div>
+</div>

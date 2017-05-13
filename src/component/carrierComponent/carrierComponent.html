@@ -1,0 +1,9 @@
+<div class="vertical-tab-content" [hidden]="!active">
+
+    <div [formGroup]="tabForm">
+        <label> Carrier Name </label>
+        <input type="text" formControlName="carrierName" />
+    </div>
+    <br/> Carrier Value{{tabForm.value | json}}<br/> Carrier Status {{tabForm.status | json}}<br/>
+
+</div>

@@ -1,0 +1,9 @@
+<div class="vertical-tab-content" [hidden]="!active">
+
+    <div [formGroup]="tabForm">
+        <label> Customer Name </label>
+        <input type="text" formControlName="customerName" />
+    </div>
+    <br/> Customer Value{{tabForm.value | json}}<br/> Customer Status {{tabForm.status | json}}<br/>
+
+</div>
