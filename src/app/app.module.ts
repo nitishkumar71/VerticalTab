@@ -24,6 +24,12 @@ import {CarrierComponent} from '../component/carrierComponent/carrierComponent';
     HttpModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+   entryComponents:[
+     CustomerComponent,
+    CarrierComponent
+   ],
+  bootstrap: [
+    AppComponent
+    ]
 })
 export class AppModule { }

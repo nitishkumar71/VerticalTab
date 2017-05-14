@@ -1,13 +1,19 @@
 <h1>
   {{title}}
 </h1>
-<form [formGroup]="form" novalidate>
+<!--<form [formGroup]="form" novalidate>
   <vertical-tabs>
     <customer-comp tabTitle="Customer" [tabFormGroup]="form"></customer-comp>
     <carrier-comp tabTitle="Carrier" [tabFormGroup]="form"></carrier-comp>
-    <!--<customer-comp tabTitle="Tab 3" [tabFormGroup]="form"></customer-comp>
-    <carrier-comp tabTitle="Tab 4" [tabFormGroup]="form"></carrier-comp>-->
+    <customer-comp tabTitle="Tab 3" [tabFormGroup]="form"></customer-comp>
+    <carrier-comp tabTitle="Tab 4" [tabFormGroup]="form"></carrier-comp>
   </vertical-tabs>
   <input type="submit" value="Submit" [disabled]="!form.valid" (ngClick)="submitForm()" />
 </form>
-<br/> Parent Form Value: {{form.value | json}}<br/> parent Form Status: {{form.status | json}}
+<br/> Parent Form Value: {{form.value | json}}<br/> parent Form Status: {{form.status | json}}-->
+
+<!--<form [formGroup]="form" novalidate>
+  <vertical-tabs [tabFormGroup]="form"></vertical-tabs>
+</form>
+<br/> Parent Form Value: {{form.value | json}}<br/> parent Form Status: {{form.status | json}}-->
+<vertical-tabs></vertical-tabs>
